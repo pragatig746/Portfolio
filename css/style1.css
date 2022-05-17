@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=EB+Garamond:ital,wght@1,600&family=Kanit&family=Lato:wght@700&family=League+Spartan:wght@500&family=Libre+Baskerville:ital@1&family=Merriweather&family=PT+Serif&family=Ubuntu:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    scroll-behavior: smooth;
+}
+.home{
+    /* background-color: black; */
+    height: 100vh; 
+    width: 100%;
+    /* background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;  */
+}
+.navbar{
+    /* background-color: rgba(183, 183, 164,0.9); */
+    background-color: #a2a392;
+    /* height: 10vh; */
+    padding: 20px;
+   
+    color: whitesmoke;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.nav-comp{
+    flex:34%;
+    background-color: #a2a392;
+    font-family: 'League Spartan';
+    margin: auto;
+    padding: 10px 200px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.home ul{
+    list-style-type: none;
+}
+.home-sub{
+    display: flex;
+}
+.home-sub1{
+    color: #d08c60;
+    margin: 30px;
+    padding: 60px;
+    flex: 50%;
+}
+.heading{
+    color: #d08c60;
+    font-size: 80px;
+    font-family: 'EB Garamond';
+}
+.home-sub1 p{
+    padding-top: 25px;
+    font-size: 25px;
+    color: #dde5b6;
+    font-family: 'Merriweather';
+}
+.home-sub2{
+    margin-top: 50px;
+    flex: 50%;
+}
+.home button{
+    margin-left: 50%;
+    height: 60px;
+    width: 130px;
+    font-size: 25px;
+    padding: 10px;
+    border-color: antiquewhite;
+    font-family: 'Merriweather';
+    border-radius: 7px;
+    background-color: #eeddd3;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.home a{
+    color: black;
+}
+.home span{
+    background-color: #eeddd3;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.home span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.home:hover span {
+padding-right: 25px;
+}
+  
+.home:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.education{
+    color: white;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.education h1{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.edu{
+    padding: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.edu-card{
+    margin: 20px;
+    padding: 10px;
+    height: 50vh;
+    width: 25vw;
+    border-radius: 20px;
+    background-color: chartreuse;
+    box-shadow: 5px 10px 18px #888888;
+    border: 3px solid #ccc;  
+}
+.edu-card:hover {
+    transition: 0.3s;
+    box-shadow: 5px 18px 18px red;
+  }
+.subheading{
+    font-size: 40px;
+    color:rgb(49, 49, 116);
+    background-color: chartreuse;
+    text-align: center;
+    font-family: 'Comic sans MS';
+    padding: 20px;
+}
+.edu-content{
+    padding: 10px;
+    background-color: chartreuse;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+}
+.projects{
+    padding: 50px;
+}
+.projects h1{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.proj{
+    margin: 20px;
+    /* padding: 20px; */
+    padding-bottom: 30px;
+    display: flex;
+}
+.card{
+    width: 100%;
+    height: 400px;
+    display: block;
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+    filter: blur(3px);
+    transition: background 0.8s linear;
+}
+.in-project{
+    /* margin: auto; */
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 40vh;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    /* height: 40vh;
+    width: 40vh; */
+    border: 3px solid black;
+    border-radius: 20px;
+}
+.container {
+    padding: 20px;
+    position: relative;
+    width: 30%;
+    height: 30%;
+  }
+.imgtext{
+    display: none;
+}
+.middle {
+    transition: .5s ease;
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: cursive;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+.container:hover .in-project {
+    opacity: 0.6;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+    display: block;
+  }
+.text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+  @media only screen and (max-width: 1118px)
+  {
+      .home{
+          width: 50vh;
+      }
+      .heading{
+          font-size: 50px;
+      }
+      .home-sub{
+          display: block;
+      }
+      .home-sub1{
+          padding: 30px;
+          margin-right: 0;
+          margin: 30px;
+      } 
+      .home-sub1 p{
+        width: 40vh;
+        padding-top: 25px;
+        font-size: 20px;
+    }
+      .home button{
+          margin-left: 40px;
+      }
+      .navbar{
+          display: none;
+      }
+      .home-sub2{
+          display: none;
+      }
+      .edu{
+          margin: 10px;
+          padding: 10px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+      .edu-card{
+          height: 30vh;
+      }
+      .subheading{
+          font-size: 15px;
+      }
+      .edu-content{
+          font-size: 10px;
+      }
+      .projects{
+          width: 80vw;
+          padding: 10px;
+      }
+      .proj{
+          flex-direction: column;
+      }
+      .in-project{
+          width: 30vh;
+      }
+
+      .container:hover .in-project {
+        opacity: 1;
+      }
+      .container:hover .middle {
+        display: none;
+      }
+      .imgtext{
+          text-align: center;
+          padding-top: 5px;
+          padding-right: 0;
+          display: inline-block;
+          color: #fff;
+      }
+      .middle{
+          display: block;
+          color: whitesmoke;
+      }
+  }
